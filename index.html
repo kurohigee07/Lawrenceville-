@@ -8,30 +8,96 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="particles" id="particles"></div>
+    <!-- Background dengan bintang-bintang -->
+    <div class="stars"></div>
+    <div class="stars2"></div>
+    <div class="stars3"></div>
     
-    <div class="container">
-        <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-img" id="profileImg">
-        
-        <h1>Kurohigee</h1>
-        
-        <div class="social-links">
-            <a href="#" class="https://instagram/pabloOo_fj" id="instagram">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="#" class="https://tiktok.com/@warcide05" id="tiktok">
-                <i class="fab fa-tiktok"></i>
-            </a>
-            <a href="#" class="https://github.com/kurohigee07" id="github">
-                <i class="fab fa-github"></i>
-            </a>
+    <!-- Astronot floating -->
+    <div class="astronaut">
+        <div class="astronaut-body">
+            <div class="head">
+                <div class="helmet"></div>
+                <div class="visor"></div>
+            </div>
+            <div class="body">
+                <div class="arm left"></div>
+                <div class="arm right"></div>
+                <div class="leg left"></div>
+                <div class="leg right"></div>
+            </div>
         </div>
-        
-        <button class="change-photo-btn" id="changePhotoBtn">Ganti Foto Profil</button>
-        <input type="file" id="photoInput" class="change-photo" accept="image/*">
-        
+    </div>
+
+    <div class="container">
+        <div class="profile-section">
+            <div class="profile-img-container">
+                <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" 
+                     alt="Profile Picture" class="profile-img" id="profileImg">
+                <div class="profile-overlay">
+                    <i class="fas fa-camera"></i>
+                </div>
+            </div>
+            
+            <h1 class="profile-name">Kurohigee</h1>
+        </div>
+
+        <div class="social-container">
+            <h2 class="social-title">My Social Media</h2>
+            
+            <div class="social-boxes">
+                <a href="#" class="social-box instagram" id="instagram">
+                    <div class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="social-info">
+                        <h3>Instagram</h3>
+                        <p>@kurohigee</p>
+                    </div>
+                    <div class="social-arrow">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </a>
+
+                <a href="#" class="social-box tiktok" id="tiktok">
+                    <div class="social-icon">
+                        <i class="fab fa-tiktok"></i>
+                    </div>
+                    <div class="social-info">
+                        <h3>TikTok</h3>
+                        <p>@kurohigee</p>
+                    </div>
+                    <div class="social-arrow">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </a>
+
+                <a href="#" class="social-box github" id="github">
+                    <div class="social-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <div class="social-info">
+                        <h3>GitHub</h3>
+                        <p>kurohigee</p>
+                    </div>
+                    <div class="social-arrow">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="action-buttons">
+            <button class="change-photo-btn" id="changePhotoBtn">
+                <i class="fas fa-user-astronaut"></i>
+                Ganti Foto Profil
+            </button>
+            <input type="file" id="photoInput" class="change-photo" accept="image/*">
+        </div>
+
         <div class="copyright">
-            © 2026 Kurohigee
+            <div class="planet"></div>
+            © 2026 Kurohigee - Space Explorer
         </div>
     </div>
 
