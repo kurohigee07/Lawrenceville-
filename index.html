@@ -3,104 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kurohigee - Profil</title>
+    <title>Kurohigee - Space Explorer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Background dengan bintang-bintang -->
-    <div class="stars"></div>
-    <div class="stars2"></div>
-    <div class="stars3"></div>
-    
-    <!-- Astronot floating -->
-    <div class="astronaut">
-        <div class="astronaut-body">
-            <div class="head">
-                <div class="helmet"></div>
-                <div class="visor"></div>
-            </div>
-            <div class="body">
-                <div class="arm left"></div>
-                <div class="arm right"></div>
-                <div class="leg left"></div>
-                <div class="leg right"></div>
-            </div>
+    <!-- Background Elements -->
+    <div class="universe">
+        <div class="galaxy">
+            <div class="nebula nebula-1"></div>
+            <div class="nebula nebula-2"></div>
+            <div class="nebula nebula-3"></div>
         </div>
+        <div class="shooting-stars"></div>
+        <div class="floating-rocks"></div>
+        <div class="energy-orb"></div>
     </div>
 
-    <div class="container">
-        <div class="profile-section">
-            <div class="profile-img-container">
-                <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" 
-                     alt="Profile Picture" class="profile-img" id="profileImg">
-                <div class="profile-overlay">
-                    <i class="fas fa-camera"></i>
+    <!-- Main Container dengan animasi masuk -->
+    <div class="main-container">
+        <div class="entry-animation">
+            <!-- Spaceship yang masuk dari atas -->
+            <div class="spaceship-entry">
+                <div class="spaceship">
+                    <div class="ship-body">
+                        <div class="cockpit"></div>
+                        <div class="wings">
+                            <div class="wing left"></div>
+                            <div class="wing right"></div>
+                        </div>
+                        <div class="engine-glow"></div>
+                    </div>
                 </div>
             </div>
-            
-            <h1 class="profile-name">Kurohigee</h1>
-        </div>
 
-        <div class="social-container">
-            <h2 class="social-title">My Social Media</h2>
-            
-            <div class="social-boxes">
-                <a href="#" class="social-box instagram" id="instagram">
-                    <div class="social-icon">
-                        <i class="fab fa-instagram"></i>
+            <!-- Content yang muncul setelah spaceship -->
+            <div class="content-wrapper">
+                <!-- Profile Section -->
+                <div class="profile-section">
+                    <div class="profile-orb">
+                        <div class="orb-glow"></div>
+                        <img src="profile.jpg" alt="Kurohigee" class="profile-img cosmic">
+                        <div class="ring ring-1"></div>
+                        <div class="ring ring-2"></div>
+                        <div class="ring ring-3"></div>
                     </div>
-                    <div class="social-info">
-                        <h3>Instagram</h3>
-                        <p>@kurohigee</p>
-                    </div>
-                    <div class="social-arrow">
-                        <i class="fas fa-chevron-right"></i>
-                    </div>
-                </a>
+                    
+                    <h1 class="profile-name cosmic-text">
+                        <span class="letter" style="--i:1">K</span>
+                        <span class="letter" style="--i:2">u</span>
+                        <span class="letter" style="--i:3">r</span>
+                        <span class="letter" style="--i:4">o</span>
+                        <span class="letter" style="--i:5">h</span>
+                        <span class="letter" style="--i:6">i</span>
+                        <span class="letter" style="--i:7">g</span>
+                        <span class="letter" style="--i:8">e</span>
+                        <span class="letter" style="--i:9">e</span>
+                    </h1>
+                    <p class="profile-tag">Digital Space Explorer</p>
+                </div>
 
-                <a href="#" class="social-box tiktok" id="tiktok">
-                    <div class="social-icon">
-                        <i class="fab fa-tiktok"></i>
+                <!-- Social Media Section -->
+                <div class="social-dimension">
+                    <div class="portal-gateway">
+                        <div class="portal-ring"></div>
+                        <h2 class="portal-title">Connect Through Portals</h2>
                     </div>
-                    <div class="social-info">
-                        <h3>TikTok</h3>
-                        <p>@kurohigee</p>
-                    </div>
-                    <div class="social-arrow">
-                        <i class="fas fa-chevron-right"></i>
-                    </div>
-                </a>
+                    
+                    <div class="social-portals">
+                        <a href="https://instagram.com/pablo0o_fj" class="portal instagram-portal" data-platform="instagram">
+                            <div class="portal-frame">
+                                <div class="portal-core">
+                                    <i class="fab fa-instagram portal-icon"></i>
+                                </div>
+                                <div class="portal-energy"></div>
+                            </div>
+                            <div class="portal-info">
+                                <h3>Instagram</h3>
+                                <p>@pablo0o_fj</p>
+                                <div class="portal-status">
+                                    <span class="status-dot"></span>
+                                    <span>Portal Active</span>
+                                </div>
+                            </div>
+                            <div class="portal-beams">
+                                <div class="beam"></div>
+                                <div class="beam"></div>
+                                <div class="beam"></div>
+                            </div>
+                        </a>
 
-                <a href="#" class="social-box github" id="github">
-                    <div class="social-icon">
-                        <i class="fab fa-github"></i>
+                        <a href="https://tiktok.com/@warcide05" class="portal tiktok-portal" data-platform="tiktok">
+                            <div class="portal-frame">
+                                <div class="portal-core">
+                                    <i class="fab fa-tiktok portal-icon"></i>
+                                </div>
+                                <div class="portal-energy"></div>
+                            </div>
+                            <div class="portal-info">
+                                <h3>TikTok</h3>
+                                <p>@warcide05</p>
+                                <div class="portal-status">
+                                    <span class="status-dot"></span>
+                                    <span>Wormhole Open</span>
+                                </div>
+                            </div>
+                            <div class="portal-beams">
+                                <div class="beam"></div>
+                                <div class="beam"></div>
+                                <div class="beam"></div>
+                            </div>
+                        </a>
+
+                        <a href="https://github.com/kurohigee07" class="portal github-portal" data-platform="github">
+                            <div class="portal-frame">
+                                <div class="portal-core">
+                                    <i class="fab fa-github portal-icon"></i>
+                                </div>
+                                <div class="portal-energy"></div>
+                            </div>
+                            <div class="portal-info">
+                                <h3>GitHub</h3>
+                                <p>kurohigee07</p>
+                                <div class="portal-status">
+                                    <span class="status-dot"></span>
+                                    <span>System Online</span>
+                                </div>
+                            </div>
+                            <div class="portal-beams">
+                                <div class="beam"></div>
+                                <div class="beam"></div>
+                                <div class="beam"></div>
+                            </div>
+                        </a>
                     </div>
-                    <div class="social-info">
-                        <h3>GitHub</h3>
-                        <p>kurohigee</p>
+                </div>
+
+                <!-- Cosmic Footer -->
+                <div class="cosmic-footer">
+                    <div class="quantum-signature">
+                        <div class="signature-orb"></div>
+                        <span>© 2026 Kurohigee - Beyond The Event Horizon</span>
                     </div>
-                    <div class="social-arrow">
-                        <i class="fas fa-chevron-right"></i>
+                    <div class="space-station">
+                        <div class="station-core"></div>
+                        <div class="solar-panel left"></div>
+                        <div class="solar-panel right"></div>
                     </div>
-                </a>
+                </div>
             </div>
         </div>
-
-        <div class="action-buttons">
-            <button class="change-photo-btn" id="changePhotoBtn">
-                <i class="fas fa-user-astronaut"></i>
-                Ganti Foto Profil
-            </button>
-            <input type="file" id="photoInput" class="change-photo" accept="image/*">
-        </div>
-
-        <div class="copyright">
-            <div class="planet"></div>
-            © 2026 Kurohigee - Space Explorer
-        </div>
     </div>
+
+    <!-- Audio Elements -->
+    <audio id="hoverSound" preload="auto">
+        <source src="data:audio/wav;base64,UklGRigAAABXQVZFZm10IBAAAAABAAEARKwAAIhYAQACABAAZGF0YQQAAAAAAA==" type="audio/wav">
+    </audio>
 
     <script src="script.js"></script>
 </body>
-</html>
+    </html>
