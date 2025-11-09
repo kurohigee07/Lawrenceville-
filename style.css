@@ -16,7 +16,7 @@ body {
     position: relative;
 }
 
-/* Animated Background */
+/* Animated Background - HITAM */
 .animated-bg {
     position: fixed;
     top: 0;
@@ -24,18 +24,10 @@ body {
     width: 100%;
     height: 100%;
     z-index: -2;
-    background: linear-gradient(45deg, #0a0a0a, #1a1a2e, #16213e, #0f3460);
-    background-size: 400% 400%;
-    animation: gradientShift 15s ease infinite;
+    background: #000000;
 }
 
-@keyframes gradientShift {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-
-/* Floating Shapes */
+/* Floating Shapes - lebih subtle */
 .floating-shapes {
     position: absolute;
     width: 100%;
@@ -45,8 +37,8 @@ body {
 .shape {
     position: absolute;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.03);
-    animation: float 20s infinite linear;
+    background: rgba(255, 255, 255, 0.02);
+    animation: float 25s infinite linear;
 }
 
 .shape-1 {
@@ -129,21 +121,25 @@ body {
     margin: 0 auto 2rem;
 }
 
+/* Frame avatar - PUTIH saja */
 .img-frame {
     position: relative;
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    padding: 5px;
-    background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #ffeaa7);
-    background-size: 300% 300%;
-    animation: gradientRotate 4s ease infinite;
-    box-shadow: 0 0 30px rgba(79, 195, 247, 0.5);
+    padding: 4px;
+    background: #ffffff;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
+    animation: frameGlow 3s ease-in-out infinite alternate;
 }
 
-@keyframes gradientRotate {
-    0%, 100% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
+@keyframes frameGlow {
+    0% {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    }
+    100% {
+        box-shadow: 0 0 35px rgba(255, 255, 255, 0.6);
+    }
 }
 
 .profile-img {
@@ -151,56 +147,46 @@ body {
     height: 100%;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid #000;
+    border: 2px solid #000;
     position: relative;
     z-index: 2;
     transition: all 0.5s ease;
-    animation: imgGlow 3s ease-in-out infinite alternate;
+    animation: imgFloat 4s ease-in-out infinite;
 }
 
-@keyframes imgGlow {
-    0% {
-        filter: brightness(1) saturate(1);
-        box-shadow: 0 0 20px rgba(79, 195, 247, 0.3);
+@keyframes imgFloat {
+    0%, 100% {
+        transform: translateY(0) scale(1);
     }
-    100% {
-        filter: brightness(1.1) saturate(1.2);
-        box-shadow: 0 0 40px rgba(79, 195, 247, 0.8);
+    50% {
+        transform: translateY(-5px) scale(1.02);
     }
 }
 
+/* Hapus glow gradient */
 .img-glow {
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
-    border-radius: 50%;
-    background: linear-gradient(45deg, transparent, rgba(79, 195, 247, 0.3), transparent);
-    animation: glowRotate 3s linear infinite;
-    z-index: 1;
-}
-
-@keyframes glowRotate {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    display: none;
 }
 
 .pulse-ring {
     position: absolute;
-    top: -10px;
-    left: -10px;
-    right: -10px;
-    bottom: -10px;
-    border: 2px solid rgba(79, 195, 247, 0.5);
+    top: -8px;
+    left: -8px;
+    right: -8px;
+    bottom: -8px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 50%;
-    animation: pulse 2s ease-out infinite;
+    animation: pulse 3s ease-out infinite;
 }
 
 @keyframes pulse {
     0% {
         transform: scale(1);
-        opacity: 1;
+        opacity: 0.8;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.4;
     }
     100% {
         transform: scale(1.2);
@@ -212,19 +198,18 @@ body {
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
-    background: linear-gradient(45deg, #4fc3f7, #29b6f6, #0288d1);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    animation: nameGlow 3s ease-in-out infinite alternate;
+    color: #ffffff;
+    animation: nameFloat 3s ease-in-out infinite;
 }
 
-@keyframes nameGlow {
-    0% {
-        text-shadow: 0 0 10px rgba(79, 195, 247, 0.3);
+@keyframes nameFloat {
+    0%, 100% {
+        transform: translateY(0);
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
     }
-    100% {
-        text-shadow: 0 0 20px rgba(79, 195, 247, 0.8);
+    50% {
+        transform: translateY(-3px);
+        text-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
     }
 }
 
@@ -319,7 +304,7 @@ body {
     opacity: 0;
     transform: translateX(-10px);
     transition: all 0.3s ease;
-    color: #4fc3f7;
+    color: #ffffff;
     position: relative;
     z-index: 2;
 }
@@ -397,18 +382,6 @@ body {
     color: #888;
     opacity: 0;
     animation: fadeIn 1s ease-out 2s forwards;
-    position: relative;
-}
-
-.copyright::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: -30px;
-    width: 20px;
-    height: 1px;
-    background: #4fc3f7;
-    animation: lineExtend 2s ease-out 2.5s forwards;
 }
 
 @keyframes fadeIn {
@@ -416,12 +389,7 @@ body {
     100% { opacity: 1; }
 }
 
-@keyframes lineExtend {
-    0% { width: 0; opacity: 0; }
-    100% { width: 20px; opacity: 1; }
-}
-
-/* Particles */
+/* Particles - lebih subtle */
 .particles-container {
     position: absolute;
     width: 100%;
@@ -453,4 +421,4 @@ body {
         height: 40px;
         font-size: 1.2rem;
     }
-}
+        }
