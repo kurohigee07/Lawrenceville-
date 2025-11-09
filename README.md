@@ -1,4 +1,4 @@
-```markdown
+
 # 🚀 Kurohigee - Digital Space Explorer
 
 <div align="center">
