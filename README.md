@@ -2,7 +2,7 @@
 
 <div align="center">
 
-<img src="https://komarev.com/gh-views?username=kurohigee07&color=blue&style=flat-square" alt="Profile Views">
+<img src="https://komarev.com/gh-pages?username=kurohigee07&color=blue&style=flat-square" alt="Profile Views">
 <img src="https://img.shields.io/github/followers/kurohigee07?style=social" alt="GitHub Followers">
 <img src="https://img.shields.io/github/stars/kurohigee07?style=social" alt="Stars">
 
@@ -22,7 +22,6 @@ const kurohigee = {
   funFact: "I believe in making the web more interactive and fun!"
 };
 ```
-```markdown
 🛠️ Tech Stack
 
 <div align="center">
@@ -66,8 +65,7 @@ const kurohigee = {
 
 ⚡ "Code is like space - infinite possibilities waiting to be explored" ⚡
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer" alt=
-"Footer">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer" alt="Footer">
 
 </div>
 ```
