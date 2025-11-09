@@ -1,4 +1,3 @@
-
 # 🚀 Kurohigee - Digital Space Explorer
 
 <div align="center">
@@ -13,6 +12,7 @@
 
 ## 🌟 About Me
 
+```javascript
 const kurohigee = {
   pronouns: "he" | "him",
   code: ["JavaScript", "HTML", "CSS", "Python"],
@@ -21,8 +21,8 @@ const kurohigee = {
   currentFocus: "Building awesome web experiences",
   funFact: "I believe in making the web more interactive and fun!"
 };
+```
 
-...
 🛠️ Tech Stack
 
 <div align="center">
@@ -63,3 +63,4 @@ https://img.shields.io/badge/Portfolio-%23000000.svg?style=for-the-badge&logo=ne
 https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer
 
 </div>
+```
