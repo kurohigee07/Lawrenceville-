@@ -3,163 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kurohigee - Space Explorer</title>
+    <title>Kurohigee</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Background Elements -->
-    <div class="universe">
-        <div class="galaxy">
-            <div class="nebula nebula-1"></div>
-            <div class="nebula nebula-2"></div>
-            <div class="nebula nebula-3"></div>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
         </div>
-        <div class="shooting-stars"></div>
-        <div class="floating-rocks"></div>
-        <div class="energy-orb"></div>
+        <div class="particles-container"></div>
     </div>
 
-    <!-- Main Container dengan animasi masuk -->
-    <div class="main-container">
-        <div class="entry-animation">
-            <!-- Spaceship yang masuk dari atas -->
-            <div class="spaceship-entry">
-                <div class="spaceship">
-                    <div class="ship-body">
-                        <div class="cockpit"></div>
-                        <div class="wings">
-                            <div class="wing left"></div>
-                            <div class="wing right"></div>
-                        </div>
-                        <div class="engine-glow"></div>
-                    </div>
+    <div class="container">
+        <!-- Profile Section -->
+        <div class="profile-card">
+            <div class="profile-img-container">
+                <div class="img-frame">
+                    <img src="profile.jpg" alt="Kurohigee" class="profile-img">
+                    <div class="img-glow"></div>
                 </div>
+                <div class="pulse-ring"></div>
             </div>
+            
+            <h1 class="profile-name">Kurohigee</h1>
+        </div>
 
-            <!-- Content yang muncul setelah spaceship -->
-            <div class="content-wrapper">
-                <!-- Profile Section -->
-                <div class="profile-section">
-                    <div class="profile-orb">
-                        <div class="orb-glow"></div>
-                        <img src="hitam-putih.jpg" alt="Kurohigee" class="profile-img cosmic">
-                        <div class="ring ring-1"></div>
-                        <div class="ring ring-2"></div>
-                        <div class="ring ring-3"></div>
+        <!-- Social Links -->
+        <div class="social-section">
+            <div class="social-links">
+                <a href="https://instagram.com/pablo0o_fj" class="social-link instagram">
+                    <div class="icon-wrapper">
+                        <i class="fab fa-instagram"></i>
                     </div>
-                    
-                    <h1 class="profile-name cosmic-text">
-                        <span class="letter" style="--i:1">K</span>
-                        <span class="letter" style="--i:2">u</span>
-                        <span class="letter" style="--i:3">r</span>
-                        <span class="letter" style="--i:4">o</span>
-                        <span class="letter" style="--i:5">h</span>
-                        <span class="letter" style="--i:6">i</span>
-                        <span class="letter" style="--i:7">g</span>
-                        <span class="letter" style="--i:8">e</span>
-                        <span class="letter" style="--i:9">e</span>
-                    </h1>
-                    <p class="profile-tag">Digital Space Explorer</p>
-                </div>
+                    <span>Instagram</span>
+                    <div class="link-arrow">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="hover-effect"></div>
+                </a>
 
-                <!-- Social Media Section -->
-                <div class="social-dimension">
-                    <div class="portal-gateway">
-                        <div class="portal-ring"></div>
-                        <h2 class="portal-title">Connect Through Portals</h2>
+                <a href="https://tiktok.com/@warcide05" class="social-link tiktok">
+                    <div class="icon-wrapper">
+                        <i class="fab fa-tiktok"></i>
                     </div>
-                    
-                    <div class="social-portals">
-                        <a href="https://instagram.com/pablo0o_fj" class="portal instagram-portal" data-platform="instagram">
-                            <div class="portal-frame">
-                                <div class="portal-core">
-                                    <i class="fab fa-instagram portal-icon"></i>
-                                </div>
-                                <div class="portal-energy"></div>
-                            </div>
-                            <div class="portal-info">
-                                <h3>Instagram</h3>
-                                <p>@pablo0o_fj</p>
-                                <div class="portal-status">
-                                    <span class="status-dot"></span>
-                                    <span>Portal Active</span>
-                                </div>
-                            </div>
-                            <div class="portal-beams">
-                                <div class="beam"></div>
-                                <div class="beam"></div>
-                                <div class="beam"></div>
-                            </div>
-                        </a>
+                    <span>TikTok</span>
+                    <div class="link-arrow">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="hover-effect"></div>
+                </a>
 
-                        <a href="https://tiktok.com/@warcide05" class="portal tiktok-portal" data-platform="tiktok">
-                            <div class="portal-frame">
-                                <div class="portal-core">
-                                    <i class="fab fa-tiktok portal-icon"></i>
-                                </div>
-                                <div class="portal-energy"></div>
-                            </div>
-                            <div class="portal-info">
-                                <h3>TikTok</h3>
-                                <p>@warcide05</p>
-                                <div class="portal-status">
-                                    <span class="status-dot"></span>
-                                    <span>Wormhole Open</span>
-                                </div>
-                            </div>
-                            <div class="portal-beams">
-                                <div class="beam"></div>
-                                <div class="beam"></div>
-                                <div class="beam"></div>
-                            </div>
-                        </a>
+                <a href="https://github.com/kurohigee07" class="social-link github">
+                    <div class="icon-wrapper">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <span>GitHub</span>
+                    <div class="link-arrow">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="hover-effect"></div>
+                </a>
+            </div>
+        </div>
 
-                        <a href="https://github.com/kurohigee07" class="portal github-portal" data-platform="github">
-                            <div class="portal-frame">
-                                <div class="portal-core">
-                                    <i class="fab fa-github portal-icon"></i>
-                                </div>
-                                <div class="portal-energy"></div>
-                            </div>
-                            <div class="portal-info">
-                                <h3>GitHub</h3>
-                                <p>kurohigee07</p>
-                                <div class="portal-status">
-                                    <span class="status-dot"></span>
-                                    <span>System Online</span>
-                                </div>
-                            </div>
-                            <div class="portal-beams">
-                                <div class="beam"></div>
-                                <div class="beam"></div>
-                                <div class="beam"></div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Cosmic Footer -->
-                <div class="cosmic-footer">
-                    <div class="quantum-signature">
-                        <div class="signature-orb"></div>
-                        <span>© 2026 Kurohigee - Beyond The Event Horizon</span>
-                    </div>
-                    <div class="space-station">
-                        <div class="station-core"></div>
-                        <div class="solar-panel left"></div>
-                        <div class="solar-panel right"></div>
-                    </div>
-                </div>
+        <!-- Footer -->
+        <div class="footer">
+            <div class="copyright">
+                © 2026 Kurohigee
             </div>
         </div>
     </div>
-
-    <!-- Audio Elements -->
-    <audio id="hoverSound" preload="auto">
-        <source src="data:audio/wav;base64,UklGRigAAABXQVZFZm10IBAAAAABAAEARKwAAIhYAQACABAAZGF0YQQAAAAAAA==" type="audio/wav">
-    </audio>
 
     <script src="script.js"></script>
 </body>
-    </html>
+</html>
