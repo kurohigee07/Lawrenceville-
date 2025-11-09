@@ -22,7 +22,7 @@ const kurohigee = {
   funFact: "I believe in making the web more interactive and fun!"
 };
 
-
+...
 🛠️ Tech Stack
 
 <div align="center">
