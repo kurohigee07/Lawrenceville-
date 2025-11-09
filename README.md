@@ -13,7 +13,6 @@
 
 ## 🌟 About Me
 
-```javascript
 const kurohigee = {
   pronouns: "he" | "him",
   code: ["JavaScript", "HTML", "CSS", "Python"],
